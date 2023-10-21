@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/871/871392.png" type="x-icon">
+    <title>Super Mario Bros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://seeklogo.com/images/S/super-mario-logo-A8E04F3EC2-seeklogo.com.png" alt="" id="logo1" onclick="clicoulogo()">
+
+        <nav>
+            <a href="" target="_self" rel="next">Notícias</a>
+            <a href="" target="_self" rel="next">Jogos</a>
+            <a href="" target="_self" rel="next">Lançamentos</a>
+        </nav>
+    </header>
+    <main id="main1">
+        <article>
+            <h1 id="nomep">Mario</h1>
+            <div>
+                <img src="imagem/mario.png" alt="" id="foto">
+            </div>
+
+            <div id="texto">
+                <p id="wiki">
+                    Mario conhecido como o homem dos pulos é o principal protagonista da série Mario e o mascote da Nintendo. Ele foi criado por Shigeru Miyamoto da Nintendo, e já apareceu em mais de 200 jogos. Originalmente, ele só aparecia em jogos de plataforma. No entanto, ele agora também tem papéis em jogos esportivos, jogos de corrida, jogos de luta entre outros. Ele é considerado por muitos como o personagem mais famoso na história dos videogames, e é conhecido por muitos como "A Face dos Video Games", tendo seis jogos fora do top 10 na lista dos videogames mais vendidos de todos os tempos.
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p id="res"></p>
+    </footer>
+
+    <script>
+        var contador = 0
+        var res = window.document.getElementById('res')
+        var foto = window.document.getElementById('foto')
+        var nomep = window.document.getElementById('nomep')
+        var wiki = window.document.getElementById('wiki')
+
+        function clicoulogo() {
+            contador += 1
+            if (contador == 1) {
+                foto.src = 'imagem/luigi.png'
+                document.body.style.background = '#358600'
+                nomep.innerHTML = 'Luigi'
+                nomep.style.color = '#358600'
+                
+                wiki.innerHTML = 'Luigi  é um personagem fictício de videogames produzido pela Nintendo. Criado pelo designer de jogos Shigeru Miyamoto. Luigi é o irmão levemente mais novo de Mario que é mascote da série, ele é o seu companheiro em vários jogos. A primeira aparição de Luigi se deu no jogo Mario Bros. em 1983, como personagem controlado pelo segundo jogador. Ele manteve esse papel em Super Mario Bros, Super Mario Bros. 3, Super Mario World e outros títulos.'
+
+            }else if (contador == 2) {
+                document.body.style.background = '#E05263'
+                foto.src = 'imagem/peach.png'
+                nomep.innerHTML = 'Princesa Peach'
+                nomep.style.color = '#E05263'
+
+                wiki.innerHTML = 'Princesa Peach Cogumelo (mais conhecida apenas como Peach, e antigamente como Princesa Cogumelo) é uma personagem principal na franquia Mario, e a princesa do Reino dos Cogumelos. A Peach apareceu pela primeira vez no jogo Super Mario Bros., sendo criada pelo Shigeru Miyamoto para ser a donzela em perigo no jogo, e isso se continuou depois disso. Ela reside em seu castelo junto de vários Toads, que agem como seus leais súditos. Seu reino é frequentemente atacado pela Tropa Koopa, uma tropa liderada pelo Bowser. Ela é o interesse amoroso do super Mario.'
+                
+            }else if (contador == 3) {
+                document.body.style.background = '#F45D01'
+                foto.src = 'imagem/bowser.png'
+                nomep.innerHTML = 'Bowser'
+                nomep.style.color = '#F45D01'
+                wiki.innerHTML = 'King Koopa Bowser é o principal vilão do universo Mario, consagrada franquia da Nintendo, e também um dos mais famosos vilões da empresa. Ele é o rei de todos os Koopas (uma espécie similar a tartarugas super desenvolvidas) e também o líder da organização criminosa conhecida como Koopa Troop, uma organização composta por diversas criaturas de Mushroom World.'
+
+            }else if (contador == 4) {
+                document.body.style.background = '#e70000'
+                foto.src = 'imagem/mario.png'
+                nomep.innerHTML = 'Mario'
+                nomep.style.color = '#e70000'
+                
+                wiki.innerHTML = 'Mario conhecido como o homem dos pulos é o principal protagonista da série Mario e o mascote da Nintendo. Ele foi criado por Shigeru Miyamoto da Nintendo, e já apareceu em mais de 200 jogos. Originalmente, ele só aparecia em jogos de plataforma. No entanto, ele agora também tem papéis em jogos esportivos, jogos de corrida, jogos de luta entre outros. Ele é considerado por muitos como o personagem mais famoso na história dos videogames, e é conhecido por muitos como "A Face dos Video Games", tendo seis jogos fora do top 10 na lista dos videogames mais vendidos de todos os tempos.'
+
+                contador = 0
+            }
+        }
+    </script>
+</body>
+</html>

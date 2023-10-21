@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragões</title>
+    <link rel="stylesheet" href="dragao.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logoh.png" alt="">
+    </header>
+    <nav id="menu">
+        <ul id="escolhas">
+            <a href="">
+                <li>Link</li>
+            </a>
+            <a href="">
+                <li>Link</li>
+            </a>
+            <a href="">
+                <li>Link</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section id="opcoes">
+                <h1>Idade</h1>
+                <input type="number" name="nDragao" id="nDragao"><br><br>
+
+                <input type="radio" name="genero" id="masc">
+                <label for="masc">Homem</label><br>
+
+                <input type="radio" name="genero" id="fem">
+                <label for="fem">Feminino</label><br>
+
+                <input type="button" value="Ir" id="botao" onclick="clicou()">
+            </section>
+        </article>
+        <aside>
+            <img src="../imagens/bola.png" alt="" id="foto">
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+
+        function clicou() {
+            var idade = window.document.getElementById('nDragao').value
+            var mouF = window.document.getElementsByName('genero')
+            var foto1 = window.document.getElementById('foto')
+
+            if (mouF[0].checked) {
+                if (idade < 12) {
+                    foto1.src = '../imagens/babydragonh.png'
+                }else if (idade < 18 ) {
+                    foto1.src = '../imagens/youngdragonh.png'
+                }else {
+                    foto1.src = '../imagens/dragonh.png'
+                }
+            }else if (mouF[1].checked) {
+                if (idade < 12) {
+                    foto1.src = '../imagens/babydragonf.png'
+                }else if (idade < 18) {
+                    foto1.src = '../imagens/youngdragonf.png'
+                }else {
+                    foto1.src = '../imagens/dragonf.png'
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+    if (idade >= 0 && idade < 12) {
+         resposta.innerHTML = 'Dragão masculino bebe'
+    }else if (idade >= 12 && idade < 18 ) {
+         resposta.innerHTML = 'Dragão masculino jovem'
+    }else {
+         resposta.innerHTML = 'Dragão masculino adulto'
+
+-->

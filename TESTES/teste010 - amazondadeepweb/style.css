@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+    --azulescuro: #133B6C;
+    --azulclaro: #6ED2E7;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--azulclaro), var(--azulescuro) 80%);
+    padding: 50px 50px 20px 50px;
+    
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 3px 3px 3px #00000075;
+
+}
+header > p {
+    text-align: center;
+    margin: 20px auto 10px auto;
+    max-width: 500px;
+    color: white;
+    text-shadow: 3px 3px 3px #00000075;
+}
+
+nav {
+    background-color: var(--azulescuro);
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+nav > a {
+    margin: 0px 0px 0px 20px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: var(--azulescuro);
+    box-shadow: 3px 3px 3px #00000075;
+}
+
+#foto {
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+}
+
+#foto > img {
+    width: 100%;
+    
+}
+
+article {
+    background-color: white;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+article > h1 {
+    font-size: 2.5em;
+}
+
+#canais {
+    height: 400px;
+    margin: 30px 0px 0px 0px;
+}
+
+footer {
+    background-color: #222222;
+    text-align: center;
+}
+
+footer > #baixo {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 20px 0px 10px 0px;
+}
+
+footer > p {
+    padding: 0px 0px 20px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+p > span {
+    color: var(--azulclaro)
+}
+
+

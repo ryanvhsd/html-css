@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <title>Meu site</title>
+        <style>
+            p {
+                display:inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="+" id="mais" onclick="clicoumais()">
+        <input type="button" value="x" id="multi" onclick="clicoumulti()"><br>
+        <input type="number" id="number1"> <p>?</p>
+        <input type="number" id="number2"> =
+        <p></p>
+        <script>
+            var para = window.document.getElementsByTagName('p')[0]
+            var para2 = window.document.getElementsByTagName('p')[1]
+
+            
+            function clicoumais() {
+                var n1 = parseInt(window.document.getElementById('number1').value)
+                var n2 = parseInt(window.document.getElementById('number2').value)
+                para.innerText= '+'
+                
+                if (isNaN(n1) && isNaN(n2)) {
+                    para2.innerText= 0
+                }else if (isNaN(n1)) {
+                    para2.innerText = n2
+                }else if (isNaN(n2)) {
+                    para2.innerText = n1
+                }else {
+                    var s = n1 + n2
+                    para2.innerText= s
+                }
+            }      
+            function clicoumulti() {         
+                var n1 = parseInt(window.document.getElementById('number1').value)
+                var n2 = parseInt(window.document.getElementById('number2').value)
+                para.innerText= 'x'
+
+                if (isNaN(n1) && isNaN(n2)) {
+                    para2.innerText= 0
+                }else if (isNaN(n1)) {
+                    para2.innerText= 0
+                }else if (isNaN(n2)) {
+                    para2.innerText= 0
+                }else {
+                    var multi = n1 * n2
+                    para2.innerText= multi
+                }
+            }
+
+        </script>
+    </body>
+</html>

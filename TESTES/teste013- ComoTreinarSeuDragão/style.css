@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+:root {
+    --azulescuro: #0A4193;
+    --preto: #0F0A0A;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("imagens/imagemdefundo.png");
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+
+}
+
+header {
+    height: 130px;
+    background-image: linear-gradient(to bottom, var(--preto) , var(--azulescuro))
+}
+
+header > img {
+    width: 150px;
+    margin: 20px 0px 0px 20px;
+}
+
+#menu {
+    background-image: linear-gradient(to bottom, var(--azulescuro), transparent);
+    display:flex;
+    justify-content: center;
+}
+
+#escolhas {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+#escolhas > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#escolhas > a:hover {
+    background-color: var(--preto);
+}

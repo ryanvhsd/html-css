@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "dragon";
+    src: url("Dragon_Ball.otf") format("opentype");
+}
+
+body {
+    background-color: #ffa621;
+}
+
+header {
+    max-width: 600px;
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+header h1 {
+    font-family: "dragon", Arial, Helvetica, sans-serif;
+    color: #ff4500;
+    text-align: center;
+    font-size: 3em;
+}
+
+nav {
+    max-width: 600px;
+    background-color: #000000;
+    text-align: center;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+}
+
+nav img {
+    margin: 0px 10px;
+}
+
+#foto {
+    max-width: 304px;
+    margin: 25px auto 25px auto;
+}
+
+article {
+    background-color: white;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+article > p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+}

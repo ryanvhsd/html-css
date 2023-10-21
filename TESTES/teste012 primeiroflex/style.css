@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+header {
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#nav1 {
+    background-color:brown;
+}
+
+#link {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+#link > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+article {
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    background-color: blue;
+}
+
+aside {
+    width: 300px;
+    flex-grow: 2;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+
+

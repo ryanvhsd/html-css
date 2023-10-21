@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Teste</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        #container {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            background-color: gray;
+            border: 3px solid black;
+
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row-reverse;
+
+        }
+
+        #box1 {
+            height: 70px;
+            width: 70px;
+            border: 3px solid rgb(255, 0, 0);
+            background-color: rgba(255, 0, 0, 0.363);
+            align-self: flex-start;
+            
+            
+        }
+
+        #box2 {
+            height: 70px;
+            width: 70px;
+            border: 3px solid rgb(47, 0, 255);
+            background-color: rgba(17, 0, 255, 0.363);
+        }
+
+        #box3 {
+            height: 70px;
+            width: 70px;
+            border: 3px solid rgb(9, 255, 0);
+            background-color: rgba(0, 255, 13, 0.363);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+</body>    
+</html>

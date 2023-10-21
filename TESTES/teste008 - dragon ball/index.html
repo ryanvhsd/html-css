@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/musett/dragon-ballz/256/Dragon-Ball-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dragon Ball</title>
+</head>
+<body>
+    <header>
+        <h1>Dragon Ball</h1>
+    </header>
+    <nav>
+        <img src="icone/iconvegeta.png" alt="" onclick="clicouvegeta()" id="iconvegeta">
+
+        <img src="icone/icongoku.png" alt="" onclick="clicougoku()" id="icongoku">
+
+        <img src="icone/iconpiculo.png" alt="" onclick="clicoupicolo()" id="iconpicolo">
+    </nav>
+    <main>
+        <div id="foto">
+            <img src="goku.png" alt="" width="300px" id="img">
+        </div>
+        <article>
+            <p id="info">Goku, nascido Kakarotto é o protagonista das franquias Dragon Ball. Ele é neto adotivo de Vovô Gohan, filho de Bardock e Gine, o irmão mais novo de Raditz, o marido de Chichi, pai de Gohan e Goten, avô de Pan e mais tarde tataravô de Goku Jr. Sua primeira aparição ocorreu em 1984, no primeiro capítulo do mangá Dragon Ball, publicado na revista Weekly Shōnen Jump. Goku é inspirado em Sun Wukong, personagem do romance Jornada ao Oeste. Porém, Toriyama mudou algumas de suas características para ser mais original. Goku é apresentado como um menino estranho com rabo de macaco e força sobre-humana.</p>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var img = window.document.getElementById('img')
+        var para = window.document.getElementById('info')
+
+        function clicouvegeta() {
+            document.body.style.background = '#5BC0EB'
+            img.src = 'vegeta.png'
+            para.innerHTML = 'Vegeta, o Príncipe dos Saiyajins é um dos principais personagens do mangá de Dragon Ball. Ele é o príncipe da raça dos Saiyajins e o maior rival de Goku, pelo fato de Vegeta não aceitar que um saiyajin de classe baixa como ele seja mais poderoso que o príncipe da raça.'
+        }
+
+        function clicougoku() {
+            document.body.style.background = '#ffa621'
+            img.src = 'goku.png'
+            para.innerHTML = 'Goku, nascido Kakarotto é o protagonista das franquias Dragon Ball. Ele é neto adotivo de Vovô Gohan, filho de Bardock e Gine, o irmão mais novo de Raditz, o marido de Chichi, pai de Gohan e Goten, avô de Pan e mais tarde tataravô de Goku Jr. Sua primeira aparição ocorreu em 1984, no primeiro capítulo do mangá Dragon Ball, publicado na revista Weekly Shōnen Jump. Goku é inspirado em Sun Wukong, personagem do romance Jornada ao Oeste. Porém, Toriyama mudou algumas de suas características para ser mais original. Goku é apresentado como um menino estranho com rabo de macaco e força sobre-humana.'
+
+        }
+
+        function clicoupicolo() {
+            document.body.style.background = '#8EA604'
+            img.src = 'piculo.png'
+            para.innerHTML = 'Piccolo é a reencarnação Namekuseijin e filho final de Piccolo Daimaoh e também o vilão final no anime Dragon Ball, e um protagonista em Dragon Ball Z, Dragon Ball GT, e Dragon Ball Super. De acordo com o Grande Patriarca, Piccolo assim como Kami-Sama e Piccolo Daimaoh, são parte do Clã Dragão, que são os criadores originais das Esferas do Dragão.'
+        }
+    </script>
+</body>
+</html>
